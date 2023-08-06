@@ -14,7 +14,7 @@ predictions <- predict(model, data.frame(x = new_x))
 print(predictions)
 
 # Plot the data and regression line
-plot(x, y, pch = 16, col = "blue", xlab = "x", ylab = "y", main = "Linear Regression")
+plot(x, y, pch = 16, col = "blue", xlab = "x", ylab = "y", main = "Linear Regression", xlim = c(1, max(c(x, new_x))), ylim = c(1,30))
 abline(model, col = "red", lwd = 2)
 
 # Add predicted values to the plot
